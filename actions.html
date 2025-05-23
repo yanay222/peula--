@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>פעולבלה - רשימת פעולות קיימות</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      direction: rtl;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0 20px 40px;
+    }
+    header, nav {
+      background-color: #0055aa;
+      color: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header {
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      width: 50px;
+      margin-left: 10px;
+    }
+    main {
+      margin-top: 30px;
+    }
+    h2 {
+      color: #0055aa;
+      margin-bottom: 20px;
+    }
+    ul.actions-list {
+      list-style: none;
+      padding: 0;
+    }
+    ul.actions-list li {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    ul.actions-list li:hover {
+      background-color: #dbe9ff;
+    }
+    .action-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #003d80;
+    }
+    .action-desc {
+      color: #333;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Bnei_Hamoshavim_emblem.png" alt="סמל בני המושבים" class="logo" />
+    פעולבלה
+  </header>
+  <nav>
+    <a href="home.html">דף הבית</a>
+    <a href="actions.html">רשימת פעולות קיימות</a>
+    <a href="add-action.html">הכנס פעולה למאגר</a>
+    <a href="ai-builder.html">בונה פעולות AI</a>
+  </nav>
+  <main>
+    <h2>רשימת פעולות קיימות</h2>
+    <ul class="actions-list">
+      <li>
+        <div class="action-title">פעולה 1: סיור היכרות</div>
+        <div class="action-desc">סיור מודרך במושב עם משחקי היכרות.</div>
+      </li>
+      <li>
+        <div class="action-title">פעולה 2: פעילות שטח</div>
+        <div class="action-desc">משחקי שטח ופעילויות גיבוש בחוץ.</div>
+      </li>
+      <li>
+        <div class="action-title">פעולה 3: ערב חברתי</div>
+        <div class="action-desc">מפגש חברתי עם פעילויות תרבות ופנאי.</div>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

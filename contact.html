@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>צור קשר</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    main {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #00337f;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>צור קשר עם מושב בית לחם הגלילית</h1>
+</header>
+
+<main>
+  <p>ניתן לפנות אלינו בטלפון או במייל:</p>
+  <ul>
+    <li>טלפון: <a href="tel:+972501234567">050-1234567</a></li>
+    <li>אימייל: <a href="mailto:info@beitlehemgalilit.org">info@beitlehemgalilit.org</a></li>
+  </ul>
+
+  <form onsubmit="alert('הודעה נשלחה! (דוגמה בלבד)'); return false;">
+    <label for="name">שם מלא:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">אימייל:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">הודעה:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">שלח</button>
+  </form>
+
+  <p><a href="index.html">חזרה לדף הבית</a></p>
+</main>
+
+</body>
+</html>

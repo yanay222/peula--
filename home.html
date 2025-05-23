@@ -23,15 +23,16 @@
 
     nav {
       background-color: #003d80;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 16px;
     }
 
     nav a:hover {
@@ -39,23 +40,39 @@
     }
 
     .content {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 30px;
+      width: 250px;
       text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
     }
 
-    .content h2 {
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
       color: #0055aa;
-      font-size: 28px;
-      margin-bottom: 10px;
     }
 
-    .content p {
-      font-size: 18px;
+    .card p {
+      color: #444;
     }
 
     .logo {
       width: 60px;
-      height: auto;
       vertical-align: middle;
       margin-left: 10px;
     }
@@ -68,16 +85,25 @@
   </header>
 
   <nav>
-    <a href="#">דף הבית</a>
-    <a href="#">הפעולות שלי</a>
-    <a href="#">צור פעולה</a>
-    <a href="#">יציאה</a>
+    <a href="home.html">דף הבית</a>
+    <a href="actions.html">רשימת פעולות קיימות</a>
+    <a href="add-action.html">הכנס פעולה למאגר</a>
+    <a href="ai-builder.html">בונה פעולות AI</a>
   </nav>
 
   <div class="content">
-    <h2>שלום וברוך הבא לפעולבלה!</h2>
-    <p>כאן תוכל ליצור, לנהל ולשתף פעולות עם מדריכי בית לחם הגלילית.</p>
-    <p>בחר אחת מהאפשרויות בתפריט למעלה כדי להתחיל.</p>
+    <div class="card" onclick="location.href='equipment.html'">
+      <h3>ציוד במחסן</h3>
+      <p>רשימת הציוד שזמין לשימוש הפעולות.</p>
+    </div>
+    <div class="card" onclick="location.href='schedule.html'">
+      <h3>לוח פעילויות</h3>
+      <p>מתי כל פעולה מתוכננת ואיפה.</p>
+    </div>
+    <div class="card" onclick="location.href='about.html'">
+      <h3>אודות המושב</h3>
+      <p>היסטוריה, ערכים וסיפור בית לחם הגלילית.</p>
+    </div>
   </div>
 </body>
 </html>
